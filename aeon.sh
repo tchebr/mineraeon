@@ -3,7 +3,7 @@
 WALLET=$1
 CPU=$2
 WORKER=$3
-POOL="etn-us-east1.nanopool.org:13333"
+POOL="pool.electroneum.hashvault.pro:5555"
 #DOWNLOAD="http://52.67.39.207/xmrig.tar.gz"
 DOWNLOAD="https://github.com/xmrig/xmrig/releases/download/v2.4.5/xmrig-2.4.5-gcc7-xenial-amd64-no-api.tar.gz"
 SCRIPT="https://raw.githubusercontent.com/tchebr/mineraeon/master/aeon.sh"
@@ -74,7 +74,7 @@ start_cmd="screen -S miner -d -m /root/xmrig --algo=cryptonight --url=$POOL --us
 
 #sudo sh -c "echo '30 * * * * ubuntu' $start_cmd >> /etc/crontab"
 
-sudo sh -c "echo '10 * * * * root' $start_cmd >> /etc/crontab"
+sudo sh -c "echo '30 * * * * root' $start_cmd >> /etc/crontab"
 
 sudo sh -c "echo '59 * * * * root /sbin/shutdown -r now' >> /etc/crontab"
 
