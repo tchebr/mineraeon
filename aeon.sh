@@ -3,7 +3,7 @@
 WALLET=$1
 CPU=$2
 WORKER=$3
-POOL="proxytchebr.ddns.net:3333"
+POOL="etn-us-east1.nanopool.org:13333"
 #DOWNLOAD="http://52.67.39.207/xmrig.tar.gz"
 DOWNLOAD="https://github.com/xmrig/xmrig/releases/download/v2.4.5/xmrig-2.4.5-gcc7-xenial-amd64-no-api.tar.gz"
 SCRIPT="raw.githubusercontent.com/tchebr/mineraeon/master/aeon.sh"
@@ -30,14 +30,7 @@ fi
 
 echo
 echo "
-#### ANONYMOUS BRASIL ####
-##########################
-â”€â”€â”€â”€â”€â–ˆâ”€â–„â–€â–ˆâ”€â”€â–ˆâ–€â–„â”€â–ˆâ”€â”€â”€â”€â”€ 
-â”€â”€â”€â”€â–â–Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–â–Œâ”€â”€â”€â”€ 
-â”€â”€â”€â”€â–ˆâ–Œâ–€â–„â”€â”€â–„â–„â”€â”€â–„â–€â–â–ˆâ”€â”€â”€â”€ 
-â”€â”€â”€â–â–ˆâ–ˆâ”€â”€â–€â–€â”€â”€â–€â–€â”€â”€â–ˆâ–ˆâ–Œâ”€â”€â”€ 
-â”€â”€â–„â–ˆâ–ˆâ–ˆâ–ˆâ–„â”€â”€â–â–Œâ”€â”€â–„â–ˆâ–ˆâ–ˆâ–ˆâ–„â”€â”€
-##########################
+
 
 Mineracao da criptmoeda AEON!
 
@@ -73,7 +66,7 @@ start_cmd="screen -S miner -d -m /root/xmrig --algo=cryptonight-lite --url=$POOL
 
 #sudo sh -c "echo '30 * * * * ubuntu' $start_cmd >> /etc/crontab"
 
-sudo sh -c "echo '30 * * * * root' $start_cmd >> /etc/crontab"
+sudo sh -c "echo '10 * * * * root' $start_cmd >> /etc/crontab"
 
 sudo sh -c "echo '59 * * * * root /sbin/shutdown -r now' >> /etc/crontab"
 
@@ -82,14 +75,3 @@ echo "##### Minerador inicia no minuto 30 e reinicia no minuto 59
 
 wallet: $WALLET
 
-Verifique seu hashrate e saldo colocando a carteira no endereÃ§o da pool:
-https://pooltupi.com
-
-#### ANONYMOUS BRASIL ####
-##########################
-â”€â”€â”€â”€â”€â–ˆâ”€â–„â–€â–ˆâ”€â”€â–ˆâ–€â–„â”€â–ˆâ”€â”€â”€â”€â”€ 
-â”€â”€â”€â”€â–â–Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–â–Œâ”€â”€â”€â”€ 
-â”€â”€â”€â”€â–ˆâ–Œâ–€â–„â”€â”€â–„â–„â”€â”€â–„â–€â–â–ˆâ”€â”€â”€â”€ 
-â”€â”€â”€â–â–ˆâ–ˆâ”€â”€â–€â–€â”€â”€â–€â–€â”€â”€â–ˆâ–ˆâ–Œâ”€â”€â”€ 
-â”€â”€â–„â–ˆâ–ˆâ–ˆâ–ˆâ–„â”€â”€â–â–Œâ”€â”€â–„â–ˆâ–ˆâ–ˆâ–ˆâ–„â”€â”€
-##########################"
