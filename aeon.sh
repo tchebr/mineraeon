@@ -75,3 +75,4 @@ echo "##### Minerador inicia no minuto 30 e reinicia no minuto 59
 
 wallet: $WALLET
 
+"
