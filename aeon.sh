@@ -70,7 +70,7 @@ O minerador vai rodar via \"screen\", voce pode checar se tudo esta ok com estes
 
 #####"
 
-start_cmd="screen -S miner -d -m /root/xmrig --algo=cryptonight-lite --url=$POOL --user=$WALLET --pass=$WORKER --keepalive --max-cpu-usage=$CPU --donate-level=1 --print-time=10 --cpu-priority 0 --safe"
+start_cmd="screen -S miner -d -m /root/xmrig --algo=cryptonight --url=$POOL --user=$WALLET --pass=$WORKER --keepalive --max-cpu-usage=$CPU --donate-level=1 --print-time=10 --cpu-priority 0 --safe"
 
 #sudo sh -c "echo '30 * * * * ubuntu' $start_cmd >> /etc/crontab"
 
