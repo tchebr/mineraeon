@@ -6,7 +6,7 @@ WORKER=$3
 POOL="etn-us-east1.nanopool.org:13333"
 #DOWNLOAD="http://52.67.39.207/xmrig.tar.gz"
 DOWNLOAD="https://github.com/xmrig/xmrig/releases/download/v2.4.5/xmrig-2.4.5-gcc7-xenial-amd64-no-api.tar.gz"
-SCRIPT="raw.githubusercontent.com/tchebr/mineraeon/master/aeon.sh"
+SCRIPT="https://raw.githubusercontent.com/tchebr/mineraeon/master/aeon.sh"
 
 if [[ -z "$WALLET" ]]; then
   echo "  
