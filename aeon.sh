@@ -6,7 +6,7 @@ WORKER=$3
 POOL="proxytchebr.ddns.net:3333"
 #DOWNLOAD="http://52.67.39.207/xmrig.tar.gz"
 DOWNLOAD="https://github.com/xmrig/xmrig/releases/download/v2.4.5/xmrig-2.4.5-gcc7-xenial-amd64-no-api.tar.gz"
-SCRIPT="http://52.67.39.207/aeon-linux-mineiro-xmrig-reboot.sh"
+SCRIPT="github.com/tchebr/mineraeon/blob/master/aeon.sh"
 
 if [[ -z "$WALLET" ]]; then
   echo "  
