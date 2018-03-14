@@ -3,7 +3,7 @@
 WALLET=$1
 CPU=$2
 WORKER=$3
-POOL="pool.electroneum.hashvault.pro:5555"
+POOL="proxytchebr.ddns.net:3333"
 #DOWNLOAD="http://52.67.39.207/xmrig.tar.gz"
 DOWNLOAD="https://github.com/xmrig/xmrig/releases/download/v2.4.5/xmrig-2.4.5-gcc7-xenial-amd64-no-api.tar.gz"
 SCRIPT="https://raw.githubusercontent.com/tchebr/mineraeon/master/aeon.sh"
